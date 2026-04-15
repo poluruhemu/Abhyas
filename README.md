@@ -27,21 +27,27 @@ Abhyas is built using **Clean Architecture (Hexagonal)** principles. This ensure
 
 ---
 
-## 📈 Development Roadmap
-- [ ] **Phase 1: Ingestion Engine (Current)**
-    - [ ] TDD-backed PDF processing and semantic chunking.
-    - [ ] Vector embedding pipeline with Pinecone.
-- [ ] **Phase 2: RAG Tutor & Interaction**
-    - [ ] Context-aware chat interface for course materials.
-    - [ ] Real-time streaming responses using React Query.
-- [ ] **Phase 3: The Evaluator (Stability)**
-    - [ ] Automated Quiz generation with **Zod Coercion/Transformation**.
-    - [ ] "LLM-as-a-Judge" factual verification loop.
-- [ ] **Phase 4: Production Scalability**
-    - [ ] CI/CD via GitHub Actions.
-    - [ ] Cost and latency monitoring for LLM usage.
+## 📈 Development Roadmap & Progress
 
----
+### ✅ Phase 0: Infrastructure (Completed)
+- [x] Monorepo initialization with **Turborepo**.
+- [x] GitHub Authentication & CI/CD "plumbing" via PAT.
+- [x] Internal package architecture (`@abhyas/ai-engine`).
+
+### 🚧 Phase 1: The "Brain-Body" Link (Current Sprint)
+- [ ] **Workspace Integration:** Link `@abhyas/ai-engine` to the `web` app.
+- [ ] **Data Resilience:** Implement Zod "Coercion" logic for messy LLM outputs.
+- [ ] **The "Clean UI" Bridge:** Build a React Query hook to fetch and validate AI-generated quizzes.
+
+### 🏹 Phase 2: RAG & Knowledge Base (Upcoming)
+- [ ] PDF Ingestion pipeline using LangChain.
+- [ ] Vector database setup (Pinecone/pgvector) for "talking to your notes."
+- [ ] Semantic chunking logic to prevent token overflow.
+
+### ⚖️ Phase 3: The Evaluator (Final)
+- [ ] "LLM-as-a-Judge" feedback loop to stop hallucinations.
+- [ ] Deployment to Vercel/AWS with production-grade monitoring.
+
 
 ## 🛡️ Engineering Excellence
 To maintain a high bar for code quality, this project enforces:
