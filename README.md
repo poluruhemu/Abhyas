@@ -1,4 +1,4 @@
-# Abhyas (अभ्यास) 🚀
+# Abhyas
 ### **The AI-Native Learning Management System (LMS)**
 
 > *“Practice is the hardest part of learning, and training is the essence of transformation.”*
